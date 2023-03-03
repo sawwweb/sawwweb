@@ -18,8 +18,8 @@ module.exports = {
         'cold-gray': 'rgba(226, 233, 248, 0.5)',
       },
       fontFamily: {
-        roboto: 'Roboto Mono',
-        rubik: 'Rubik',
+        roboto: 'Open Sans',
+        rubik: 'Bitter',
       },
       dropShadow: {
         'shadow-c': '0px 5px 5px #FF6B6C',

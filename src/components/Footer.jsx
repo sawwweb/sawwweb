@@ -12,14 +12,7 @@ export default function Footer() {
 
   const [isHide, setIsHide] = useState(false);
   const [socials, setSocials] = useState([]);
-  const [isOpen, setIsOpen] = useState(false);
 
-  const switchSocial = () => {
-    setIsOpen(!isOpen);
-  };
-
-  const openClass = isOpen ? 'block' : 'hidden';
-  const closeClass = isOpen ? 'hidden' : 'block';
   const socialsHandler = async () => {
     const response = await getSocials();
     setSocials(response);
@@ -42,26 +35,6 @@ export default function Footer() {
         ) : (
           <>
             <div className='lg:flex hidden socials flex-col gap-8 scale-75'>
-              {socials.map(item => {
-                return (
-                  <Link key={item._id} href={item.link} target='_blank'>
-                    {item.title === 'Telegram' && <TelegramIcon />}
-                    {item.title === 'GitHub' && <GitHubIcon />}
-                    {item.title === 'Email' && <MailIcon />}
-                  </Link>
-                );
-              })}
-            </div>
-            <div
-              onClick={switchSocial}
-              className={`${closeClass} lg:hidden block bg-white-c dark:bg-black-c rounded-full p-4 scale-75`}>
-              <TelegramIcon />
-            </div>
-            <div
-              className={`${openClass} socials flex flex-col gap-8 scale-75 bg-white-c dark:bg-black-c rounded-full p-4`}>
-              <div className='mx-auto' onClick={switchSocial}>
-                <CloseIcon />
-              </div>
               {socials.map(item => {
                 return (
                   <Link key={item._id} href={item.link} target='_blank'>

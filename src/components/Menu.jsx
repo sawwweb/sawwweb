@@ -14,7 +14,7 @@ export default function Menu({ isMenu, locale }) {
     <div
       className={`bg-menu-light-bg dark:bg-menu-dark-bg backdrop-blur-sm h-screen w-screen lg:left-60 pl-20 pt-40 fixed z-20 top-0 duration-500 text-black-c dark:text-white-c ${menuClass}`}>
       <Heading>{t.menu}</Heading>
-      <nav className='md:text-3xl text-2xl uppercase'>
+      <nav className='md:text-3xl text-2xl font-semibold uppercase'>
         <ul className='flex flex-col gap-6'>
           <li className='flex items-end hover:drop-shadow-shadow-c cursor-pointer'>
             <Link className='flex items-end relative' href='/'>

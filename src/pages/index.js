@@ -13,17 +13,17 @@ export default function Home({ hello }) {
           <div className='hello__title lg:text-3xl text-xl mb-5 font-rubik'>
             {hello.heading}
           </div>
-          <div className='hello__text lg:text-2xl text-sm'>
+          <div className='hello__text lg:text-xl text-sm'>
             <PortableText value={hello.body} />
           </div>
           <div className='note__circle w-9 h-9 rounded-full bg-accent-2 border-2 border-black-c absolute -top-4 -right-4'></div>
         </div>
-        <div className='links__block flex flex-col mt-8 lg:mx-auto lg:w-1/2 text-right lg:text-2xl text-sm gap-4'>
+        <div className='links__block flex flex-col mt-8 lg:mx-auto lg:w-1/2 text-right lg:text-xl text-sm gap-4 font-semibold'>
           {hello.links.map(item => {
             return (
               <div
                 key={item.href}
-                className='links__item hover:drop-shadow-shadow-c'>
+                className='links__item hover:drop-shadow-shadow-c mr-6'>
                 <Link href={`/${item.href}`}>{item.title}</Link>
               </div>
             );

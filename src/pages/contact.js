@@ -18,7 +18,7 @@ export default function Contact({ locale, socials }) {
   return (
     <div className='contact'>
       <Heading>{t.contact}</Heading>
-      <div className='contact__wrapper lg:text-2xl text-base flex lg:flex-row flex-col justify-between'>
+      <div className='contact__wrapper lg:text-xl text-base flex lg:flex-row flex-col justify-between'>
         <div className='contact__socials lg:w-1/3 w-full flex flex-col lg:mb-0 mb-10 lg:gap-14 gap-7'>
           {socials.map(item => {
             return (

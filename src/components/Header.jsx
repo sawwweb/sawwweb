@@ -58,7 +58,7 @@ export default function Header() {
                   locale: 'ru',
                 });
               }}
-              className='cursor-pointer font-roboto uppercase text-2xl m-auto hover:drop-shadow-shadow-c'>
+              className='cursor-pointer font-roboto font-semibold uppercase text-2xl m-auto hover:drop-shadow-shadow-c'>
               RU
             </div>
           ) : (
@@ -68,7 +68,7 @@ export default function Header() {
                   locale: 'en',
                 });
               }}
-              className='cursor-pointer font-roboto uppercase text-2xl m-auto hover:drop-shadow-shadow-c'>
+              className='cursor-pointer font-roboto font-semibold uppercase text-2xl m-auto hover:drop-shadow-shadow-c'>
               EN
             </div>
           )}

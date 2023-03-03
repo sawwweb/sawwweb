@@ -20,7 +20,7 @@ export default function About({ about, locale }) {
   return (
     <div className='about'>
       <Heading>{t.about}</Heading>
-      <div className='about__wrapper flex flex-col lg:text-2xl text-base gap-5'>
+      <div className='about__wrapper flex flex-col lg:text-xl text-base gap-5'>
         {about.map((item, i) => {
           const activeClass = current === i + 1 ? 'active' : '';
           return (
