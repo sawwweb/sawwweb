@@ -1,3 +1,4 @@
+import ContactForm from '@/components/ContactForm';
 import Heading from '@/components/Heading';
 import GitHubIcon from '@/components/Icons/GitHubIcon';
 import LinkIcon from '@/components/Icons/LinkIcon';
@@ -41,31 +42,7 @@ export default function Contact({ locale, socials }) {
         <div className='contact__form lg:w-2/3 w-full flex flex-col gap-5'>
           <div className='mb-2 lg:text-xl text-base'>{t.textMe}</div>
           <div className='form__wrapper'>
-            <form
-              name='contact'
-              method='POST'
-              data-netlify='true'
-              action='/success'
-              className='flex flex-col gap-5 lg:pr-20 pr-0'>
-              <input
-                type='text'
-                id='name'
-                className={inputClasses}
-                placeholder={t.yourName}
-              />
-              <input
-                type='email'
-                id='email'
-                className={inputClasses}
-                placeholder={t.yourEmail}
-              />
-              <textarea
-                id='message'
-                className={`${inputClasses} resize-none`}
-                placeholder={t.yourMessage}
-              />
-              <input type='submit' value={t.submit} className={buttonClasses} />
-            </form>
+            <ContactForm />
           </div>
         </div>
       </div>
