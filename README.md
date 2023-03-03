@@ -30,6 +30,6 @@ I’m currently learning
 
 How to reach me:
 
-- [My site](sawwweb.netlify.app 'My site')
+- [My site](https://sawwweb.netlify.app 'My site')
 - [Telegram](https://t.me/sawwweb 'Telegram')
-- [Email: cvdrayr@gmail.com](cvdrayr@gmail.com 'Email')
+- [Email: cvdrayr@gmail.com](https://mailto:cvdrayr@gmail.com 'Email')
