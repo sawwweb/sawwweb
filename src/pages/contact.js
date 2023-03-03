@@ -14,10 +14,7 @@ Contact.titleRu = 'Контакты';
 
 export default function Contact({ locale, socials }) {
   const t = locale === 'en' ? en : ru;
-  const inputClasses =
-    'rounded-3xl placeholder:text-black-c dark:placeholder:text-white-c bg-cold-gray py-3 px-10 placeholder:opacity-75';
-  const buttonClasses =
-    'rounded-3xl bg-black-c dark:bg-white-c text-white-c dark:text-black-c py-3 px-10';
+
   return (
     <div className='contact'>
       <Heading>{t.contact}</Heading>
@@ -42,7 +39,7 @@ export default function Contact({ locale, socials }) {
         <div className='contact__form lg:w-2/3 w-full flex flex-col gap-5'>
           <div className='mb-2 lg:text-xl text-base'>{t.textMe}</div>
           <div className='form__wrapper'>
-            <ContactForm />
+            <ContactForm locale />
           </div>
         </div>
       </div>
