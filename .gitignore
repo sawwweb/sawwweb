@@ -2,6 +2,8 @@
 #sanity
 mysite-sanity
 
+#.env
+.env
 # dependencies
 /node_modules
 /.pnp
