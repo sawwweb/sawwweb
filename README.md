@@ -6,8 +6,8 @@ My name is Sergey and i'm Frontend-developer.
 
 My Stack:
 
-- JavaScript, PHP
-- React (NextJS), VueJS, Svelte
+- JavaScript, TypeScript, PHP
+- React (NextJS), VueJS, SolidJS, Astro
 - HTML, CSS (SCSS, SASS), BEM
 - Tailwind CSS, Bootstrap, Bulma
 - Netlify, Vercel
@@ -22,9 +22,7 @@ My Stack:
 
 I’m currently learning
 
-- TypeScript
 - React Query
-- Astro
 
 ---
 
